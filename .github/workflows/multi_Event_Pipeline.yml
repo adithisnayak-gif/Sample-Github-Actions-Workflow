@@ -4,10 +4,11 @@ on:
     push:
         branches:
             - main
+            - test
 
 jobs: #job n,e
     on-push:
         runs-on: ubuntu-latest
         steps: #steps to be executed in the job
-            - name: "Running on master push"
-              run: echo "Running on master push"
+            - name: "Running on master/test push"
+              run: echo "Running on master/test push"
